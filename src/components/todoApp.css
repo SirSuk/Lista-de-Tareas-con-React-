@@ -1,0 +1,100 @@
+body {
+    background-image: url('../img/todol.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.todoContainer {
+    width: 600px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+.todoContainer h1 {
+    font-size: 2.5em;
+}
+
+.todoCreateForm {
+    display: flex;
+    gap: 5px;
+}
+
+.todoInput {
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px #999;    
+}
+
+.buttonCreate {
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(26,76,169);
+    color: white;
+    padding: 10px 20px;
+}
+
+.todosContainer {
+    display:flex;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+}
+
+.todo {
+    
+    padding: 10px;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1.2rem;
+    width: 100rem;
+
+}
+
+.todoTitle {
+    flex: 1;
+    font-size: 18px
+}
+
+.todoUpdateForm, .todoInfo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button {
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(72,122,221);
+    color: white;
+    padding: 5px 10px;
+
+}
+.button:hover {
+    cursor: pointer
+}
+
+.buttonDelete {
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(237, 90, 45);
+    color: white;
+    padding: 5px 10px;
+    
+}
+
+@media (max-width: 600px) {
+        .todoCreateForm {
+            width:400px;
+            margin-left:100px;
+        }
+        .todoContainer h1 {
+            visibility: hidden;
+        }
+    }
+  
