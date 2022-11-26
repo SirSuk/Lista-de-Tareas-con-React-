@@ -12,6 +12,7 @@ body {
 }
 .todoContainer h1 {
     font-size: 2.5em;
+    color: black;
 }
 
 .todoCreateForm {
@@ -90,11 +91,24 @@ body {
 
 @media (max-width: 600px) {
         .todoCreateForm {
-            width:400px;
-            margin-left:100px;
+            width:300px;
+            margin-left:55px;
         }
         .todoContainer h1 {
             visibility: hidden;
         }
+        
+        .todosContainer {
+            width: 20rem;
+            margin-left: 115px;
+            
+        }
     }
-  
+
+    @media (max-width: 300px) {
+        .todoCreateForm {
+            width:300px;
+            margin-left:55px;
+        }
+       
+    }

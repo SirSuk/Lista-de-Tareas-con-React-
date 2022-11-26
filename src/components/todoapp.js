@@ -41,7 +41,7 @@ function handleDelete(id){
 
     return (
     <div className="todoContainer">
-        <h1> LA LISTA DE LA COMPRA</h1>
+        
         <form className="todoCreateForm" onSubmit={handleSubmit}>
             <input onChange={handleChange} className="todoInput" value={title}/>
             <input 
